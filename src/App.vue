@@ -1,17 +1,21 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <NumberInput style="width:250px;" v-model="number" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NumberInput from './NumberInput.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    NumberInput
+  },
+  data() {
+    return {
+      number: 0
+    }
   }
 }
 </script>
